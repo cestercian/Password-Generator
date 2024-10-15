@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <style>
+    body {
+      min-width: fit-content;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212;
+      font-family: 'agency FB', Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .card {
+      width: 300px;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .dark-mode {
+      background-color: #1F2937;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #808080;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background-color: #00a756;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #008f48;
+    }
+
+    .password-field {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .password-box {
+      background-color: #2e2e2e;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 250px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card dark-mode">
+    <h1>Generate a <span style="color:#00a756">random password</span></h1>
+    <p id="msgen">Never use an insecure password again.</p>
+    <button id="password-gen">Generate passwords</button>
+    <div class="password-field">
+      <button class="password-box" id="pb1">wtf</button>
+      <button class="password-box" id="pb2">whotf</button>
+    </div>
+  </div>
+</div>
+
+<!-- Link to the external JS file -->
+<script src="popup.js" defer></script>
+</body>
+</html>
